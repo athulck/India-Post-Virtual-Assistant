@@ -12,19 +12,19 @@ This is a small Design&amp;Engineering (BE102 - Semester 2) project built on Pyt
 - [x] Apache
 
 ## Installation Steps
-Step 1. Unzip data.zip
-Step 2. Install all the Requirements
-Step 3. Create Folder '/var/www/html/Complaints/' and run 'chmod 777 '/var/www/html/Complaints/.'
-Step 4. Run 'python2 main.py'
+Step 1. Unzip data.zip  
+Step 2. Install all the Requirements  
+Step 3. Create Folder '/var/www/html/Complaints/' and run 'chmod 777 '/var/www/html/Complaints/.'  
+Step 4. Run 'python2 main.py'  
 
 ## Possible Inputs
 
-1. 'complaint'
+1. 'complaint'  
 This option helps you to register your complaints. The program will store your complaints as
 '/var/www/html/Complaints/ComplaintXXXX.txt'.
 User can start apache2 process so that this system will act as a server and the admin can read the complaints directly via the local network using the IP address of this system.
 
-2. 'XXXXXX' : any 6 digit postal pin 
+2. 'XXXXXX' : any 6 digit postal pin  
 The program will do a reverse pin serach and shows the possible places (stroed in the data.txt file) using gedit.
 
 3. 'pincode'
