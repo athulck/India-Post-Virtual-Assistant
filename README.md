@@ -3,21 +3,21 @@ This is a small Design&amp;Engineering (BE102 - Semester 2) project built on Pyt
 
 
 ## Requirements 
-Linux/Ubuntu
-Gedit
-Python2
-TKinter
-Pyttsx
-Espeak
-Apache
+- [x] Linux/Ubuntu
+- [x] Gedit
+- [x] Python2
+- [x] TKinter
+- [x] Pyttsx
+- [x] Espeak
+- [x] Apache
 
-#Installation Steps
+## Installation Steps
 Step 1. Unzip data.zip
 Step 2. Install all the Requirements
 Step 3. Create Folder '/var/www/html/Complaints/' and run 'chmod 777 '/var/www/html/Complaints/.'
 Step 4. Run 'python2 main.py'
 
-#Possible Inputs
+## Possible Inputs
 
 1. 'complaint'
 This option helps you to register your complaints. The program will store your complaints as
