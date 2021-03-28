@@ -18,7 +18,7 @@ Step 3. Create a folder 'Complaints' and make sure that the program can write fi
 Step 4. Run `sudo apt-get install python3-tk`  
 Step 5. Run `pip install pyttsx3`  
 Step 6. Run `sudo apt-get install espeak -y`  
-Step 4. Run `python3 main.py`  
+Step 7. Run `python3 main.py`  
 
 ## Possible Inputs
 
