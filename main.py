@@ -1,6 +1,6 @@
 #Imports
 from tkinter import *
-import pyttsx
+import pyttsx3
 import time
 import string
 import os
@@ -17,7 +17,6 @@ class Process:
 		self.cmp_no=2001
 	    
 	    #Background Image
-
 		self.background_image = PhotoImage(file=os.path.dirname(os.path.realpath(__file__))+"/bg.gif")
 		self.background_label = Label(master, image=self.background_image)
 		self.background_label.place(x=0, y=0, relwidth=1, relheight=1)
@@ -53,7 +52,8 @@ class Process:
 	#Complaint Register Button
 	def ifregisterclicked(self, event):
 		
-		name = "/var/www/html/Complaints/Complaint"+str(self.cmp_no)+".txt"
+		name = os.path.dirname(os.path.realpath(__file__))+"/Complaints/Complaint"+str(self.cmp_no)+".txt"
+		print(name)
 		
 		file = open(name, "w+")
 		file.write(self.complaint_box.get("1.0", 'end-1c'))
@@ -100,11 +100,11 @@ class Process:
 
     #Function for TTS
 	def talk_back(self, s):
-		self.engine = pyttsx.init()
+		self.engine = pyttsx3.init()
 		self.rate = self.engine.getProperty('rate')
 		self.engine.setProperty('rate', self.rate)
 		self.voices= self.engine.getProperty('voices')                                                                                   
-		self.engine.setProperty('voice', 'english-us')     
+		self.engine.setProperty('voice',  'english-us') 
 		self.engine.say(s)
 		self.engine.say("   ")
 		self.a = self.engine.runAndWait()

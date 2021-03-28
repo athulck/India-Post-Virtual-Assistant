@@ -2,7 +2,7 @@
 import string
 import webbrowser
 import time
-import pyttsx
+import pyttsx3
 
 #Functions
 #This converts the program output list into output eligible string.
@@ -40,7 +40,7 @@ def google_search(lst):
 
 
 def talk_back(s):
-     engine = pyttsx.init()
+     engine = pyttsx3.init()
      rate = engine.getProperty('rate')
      engine.setProperty('rate', rate)
      voices= engine.getProperty('voices')                                                                                   
@@ -68,7 +68,7 @@ def process(usr_input):
 			if len(word) == 6:
 				if word.isdigit():
 					import Reverse_pin_finder	
-					if(Reverse_pin_finder.find_pin(word)):
+					if (Reverse_pin_finder.find_pin(word)):
 						pgm_op_lst=['Hope','you', 'found', 'what','you','were','looking','for']
 					else:
 						pgm_op_lst=['Sorry','no', 'results', 'found']
@@ -91,7 +91,7 @@ def process(usr_input):
 			elif word == 'goodbye':
 					pgm_op_lst = ['Have', 'a','nice','day']
                     #This is the TTS part
-					engine = pyttsx.init()
+					engine = pyttsx3.init()
 					engine.say(form_string(pgm_op_lst))
 					engine.runAndWait()
 					return form_string(pgm_op_lst)
