@@ -14,10 +14,10 @@ This is a small Design &amp; Engineering project (BE102 - Semester 2) built usin
 ## Installation Steps
 Step 1. Unzip data.zip  
 Step 2. Install all the requirements  
-Step 3. Create a folder 'Complaints' and make sure that the program can write files under the directory.
-Step 4. Run `sudo apt-get install python3-tk`
-Step 5. Run `pip install pyttsx3`
-Step 6. Run `sudo apt-get install espeak -y`
+Step 3. Create a folder 'Complaints' and make sure that the program can write files under the directory.  
+Step 4. Run `sudo apt-get install python3-tk`  
+Step 5. Run `pip install pyttsx3`  
+Step 6. Run `sudo apt-get install espeak -y`  
 Step 4. Run `python3 main.py`  
 
 ## Possible Inputs
